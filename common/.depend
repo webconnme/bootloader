@@ -1,0 +1,2737 @@
+cmd_bdinfo.o: cmd_bdinfo.c /work/include/common.h /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h
+cmd_boot.o: cmd_boot.c /work/include/common.h /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h
+cmd_bootm.o: cmd_bootm.c /work/include/common.h /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h /work/include/watchdog.h \
+ /work/include/malloc.h /work/include/u-boot/zlib.h /work/include/bzlib.h \
+ /work/include/environment.h /work/include/linux/ctype.h \
+ /work/include/usb.h /work/include/usb_defs.h \
+ /work/include/usbdescriptors.h /work/include/hush.h
+cmd_console.o: cmd_console.c /work/include/common.h \
+ /work/include/config.h /work/include/config_defaults.h \
+ /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h /work/include/stdio_dev.h \
+ /work/include/linux/list.h /work/include/linux/poison.h
+cmd_echo.o: cmd_echo.c /work/include/common.h /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h
+cmd_exit.o: cmd_exit.c /work/include/common.h /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h
+cmd_falinux.o: cmd_falinux.c /work/include/common.h \
+ /work/include/config.h /work/include/config_defaults.h \
+ /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h /work/include/exports.h \
+ /work/include/spi.h /work/include/_exports.h
+cmd_fat.o: cmd_fat.c /work/include/common.h /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h /work/include/s_record.h \
+ /work/include/ata.h /work/include/libata.h /work/include/fat.h
+cmd_flash.o: cmd_flash.c /work/include/common.h /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h
+cmd_help.o: cmd_help.c /work/include/common.h /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h
+cmd_itest.o: cmd_itest.c /work/include/common.h /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h
+cmd_load.o: cmd_load.c /work/include/common.h /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h /work/include/s_record.h \
+ /work/include/exports.h /work/include/spi.h /work/include/_exports.h \
+ /work/include/xyzModem.h
+cmd_mem.o: cmd_mem.c /work/include/common.h /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h /work/include/watchdog.h \
+ /work/include/u-boot/md5.h /work/include/compiler.h /work/include/sha1.h
+cmd_misc.o: cmd_misc.c /work/include/common.h /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h
+cmd_mmc.o: cmd_mmc.c /work/include/common.h /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h /work/include/mmc.h \
+ /work/include/linux/list.h /work/include/linux/poison.h
+cmd_nand.o: cmd_nand.c /work/include/common.h /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h \
+ /work/include/linux/mtd/mtd.h /work/include/div64.h \
+ /work/include/linux/mtd/mtd-abi.h /work/include/linux/mtd/compat.h \
+ /work/include/watchdog.h /work/include/malloc.h \
+ /work/include/jffs2/jffs2.h /work/include/jffs2/load_kernel.h \
+ /work/include/linux/list.h /work/include/linux/poison.h \
+ /work/include/nand.h /work/include/linux/mtd/nand.h \
+ /work/include/linux/mtd/bbm.h
+cmd_net.o: cmd_net.c /work/include/common.h /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h
+cmd_nvedit.o: cmd_nvedit.c /work/include/common.h /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h \
+ /work/include/environment.h /work/include/malloc.h \
+ /work/include/watchdog.h /work/include/serial.h
+cmd_pcmcia.o: cmd_pcmcia.c /work/include/common.h /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h /work/include/pcmcia.h \
+ /work/include/asm/io.h /work/include/asm/memory.h
+cmd_source.o: cmd_source.c /work/include/common.h /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h /work/include/malloc.h \
+ /work/include/hush.h
+cmd_test.o: cmd_test.c /work/include/common.h /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h
+cmd_usb.o: cmd_usb.c /work/include/common.h /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h /work/include/usb.h \
+ /work/include/usb_defs.h /work/include/usbdescriptors.h
+cmd_version.o: cmd_version.c /work/include/common.h \
+ /work/include/config.h /work/include/config_defaults.h \
+ /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h
+cmd_ximg.o: cmd_ximg.c /work/include/common.h /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h /work/include/watchdog.h
+cmd_zmac.o: cmd_zmac.c /work/include/common.h /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h /work/include/exports.h \
+ /work/include/spi.h /work/include/_exports.h
+command.o: command.c /work/include/common.h /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h
+console.o: console.c /work/include/common.h /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h /work/include/malloc.h \
+ /work/include/stdio_dev.h /work/include/linux/list.h \
+ /work/include/linux/poison.h /work/include/exports.h /work/include/spi.h \
+ /work/include/_exports.h
+dlmalloc.o: dlmalloc.c /work/include/common.h /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h /work/include/malloc.h
+env_common.o: env_common.c /work/include/common.h /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h \
+ /work/include/environment.h /work/include/malloc.h
+env_nand.o: env_nand.c /work/include/common.h /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h \
+ /work/include/environment.h /work/include/malloc.h /work/include/nand.h \
+ /work/include/linux/mtd/compat.h /work/include/linux/mtd/mtd.h \
+ /work/include/div64.h /work/include/linux/mtd/mtd-abi.h \
+ /work/include/linux/mtd/nand.h /work/include/linux/mtd/bbm.h
+exports.o: exports.c /work/include/common.h /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h /work/include/exports.h \
+ /work/include/spi.h /work/include/_exports.h
+flash.o: flash.c /work/include/common.h /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h
+hush.o: hush.c /work/include/malloc.h /work/include/linux/stddef.h \
+ /work/include/linux/types.h /work/include/linux/config.h \
+ /work/include/linux/posix_types.h /work/include/asm/posix_types.h \
+ /work/include/asm/types.h /work/include/linux/ctype.h \
+ /work/include/common.h /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/bitops.h \
+ /work/include/asm/proc/system.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h /work/include/hush.h
+image.o: image.c /work/include/common.h /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h /work/include/watchdog.h
+main.o: main.c /work/include/common.h /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h /work/include/watchdog.h \
+ /work/include/hush.h /work/include/post.h
+memsize.o: memsize.c /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h
+s_record.o: s_record.c /work/include/common.h /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h /work/include/s_record.h
+stdio.o: stdio.c /work/include/config.h /work/include/config_defaults.h \
+ /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/common.h /work/include/linux/bitops.h \
+ /work/include/asm/types.h /work/include/asm/bitops.h \
+ /work/include/asm/proc/system.h /work/include/linux/config.h \
+ /work/include/linux/types.h /work/include/linux/posix_types.h \
+ /work/include/linux/stddef.h /work/include/asm/posix_types.h \
+ /work/include/linux/string.h /work/include/asm/string.h \
+ /work/include/asm/ptrace.h /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h /work/include/malloc.h \
+ /work/include/stdio_dev.h /work/include/linux/list.h \
+ /work/include/linux/poison.h /work/include/serial.h
+usb.o: usb.c /work/include/common.h /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h \
+ /work/include/asm/processor.h /work/include/asm/atomic.h \
+ /work/include/asm/proc/processor.h /work/include/asm/proc/domain.h \
+ /work/include/linux/ctype.h /work/include/usb.h /work/include/usb_defs.h \
+ /work/include/usbdescriptors.h
+usb_storage.o: usb_storage.c /work/include/common.h \
+ /work/include/config.h /work/include/config_defaults.h \
+ /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h \
+ /work/include/asm/processor.h /work/include/asm/atomic.h \
+ /work/include/asm/proc/processor.h /work/include/asm/proc/domain.h \
+ /work/include/usb.h /work/include/usb_defs.h \
+ /work/include/usbdescriptors.h /work/include/scsi.h
+xyzModem.o: xyzModem.c /work/include/common.h /work/include/config.h \
+ /work/include/config_defaults.h /work/include/configs/nxp2120_dtk.h \
+ /work/arch/arm/include/asm/arch-nxp2120/platform.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120.h \
+ /work/arch/arm/include/asm/arch-nxp2120/nxp2120_irq.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_adc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_prototype.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_type.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_debug.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_chip_p2120.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/../nx_base/nx_clockcontrol.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_alive.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_audio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_clkpwr.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_csc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_deinterlace.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dma.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_dpc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ecid.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ehci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_gpio.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_i2c.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_intc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcud.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mcus.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mlc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_mpegtsif.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ohci.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_ppm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_pwm.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rotator.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_rtc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_scaler.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sdhc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_sspspi.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_timer.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_uart.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_udc.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/module/nx_vip.h \
+ /work/board/nxp2120/dtk/include/cfg_type.h \
+ /work/board/nxp2120/dtk/include/cfg_gpio.h \
+ /work/board/nxp2120/dtk/include/cfg_main.h \
+ /work/board/nxp2120/dtk/include/cfg_sys.h \
+ /work/arch/arm/cpu/arm1176/nxp2120/prototype/nx_base/nx_type.h \
+ /work/board/nxp2120/dtk/include/cfg_mem.h \
+ /work/include/config_cmd_default.h /work/include/asm/config.h \
+ /work/include/linux/bitops.h /work/include/asm/types.h \
+ /work/include/asm/bitops.h /work/include/asm/proc/system.h \
+ /work/include/linux/config.h /work/include/linux/types.h \
+ /work/include/linux/posix_types.h /work/include/linux/stddef.h \
+ /work/include/asm/posix_types.h /work/include/linux/string.h \
+ /work/include/asm/string.h /work/include/asm/ptrace.h \
+ /work/include/asm/proc/ptrace.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stdarg.h \
+ /work/include/part.h /work/include/ide.h /work/include/flash.h \
+ /work/include/image.h /work/include/compiler.h \
+ /opt/crosstools/arm-eabi-4.6.3-glibc-2.13/lib/gcc/arm-generic-linux-gnueabi/4.6.3/include/stddef.h \
+ /work/include/asm/byteorder.h \
+ /work/include/linux/byteorder/little_endian.h \
+ /work/include/linux/byteorder/swab.h \
+ /work/include/linux/byteorder/generic.h /work/include/lmb.h \
+ /work/include/asm/u-boot.h /work/include/command.h \
+ /work/include/asm/global_data.h /work/include/asm/mach-types.h \
+ /work/include/asm/setup.h /work/include/asm/u-boot-arm.h \
+ /work/include/net.h /work/include/u-boot/crc.h /work/include/xyzModem.h \
+ /work/include/crc.h
