@@ -112,6 +112,7 @@ static void init_gpio_pad(void);
 static void init_alive_pad(void);
 static void init_bus_pad(void);
 static void init_display(int dev);
+static void init_boot_mode(void);
 
 int board_init(void)
 {
@@ -120,10 +121,6 @@ int board_init(void)
 	init_bus_pad();
 
 	DBGOUT("%s : done board initialize ...\n", CFG_SYS_BOARD_NAME);
-printf("ddsfisfsdf \n") ;
-//printf("######################################## GPIO VAL : %d\n",NX_GPIO_GetInputValue (3, ((PAD_GET_OUTLEVEL(3) ? CTRUE : CFALSE))) );
-
-//printf("######################################## GPIO VAL : %d\n",NX_GPIO_GetInputValue(3, 3)  );
 
 	return 0;
 }
@@ -152,6 +149,8 @@ int board_late_init(void)
 		boot_from_sd();
 	}
 #endif
+
+    init_boot_mode();
 
 	return 0;
 }
@@ -277,9 +276,6 @@ static void init_alive_pad(void)
 		pullup = PAD_GET_PULLUP(alv_pad[io_bit]);
 		detect = PAD_GET_DECTMODE(alv_pad[io_bit]);
 
-
-printf("outval : %d alv pad : %d  io_bit : %d \n", outval, alv_pad[io_bit], io_bit);
-
 		NX_ALIVE_SetOutputValue (io_bit, (outval ? CTRUE : CFALSE));
 		NX_ALIVE_SetPullUpEnable(io_bit, (pullup ? CTRUE : CFALSE));
 
@@ -310,6 +306,17 @@ static void init_bus_pad(void)
 		buspad   = PAD_GET_BUS(bus_pad[io_bit]);
 		strength = PAD_GET_STRENGTH(bus_pad[io_bit]);
 		NX_CLKPWR_SetBusPadStrength(buspad, strength);
+	}
+}
+
+static void init_boot_mode(void)
+{
+    if (NX_GPIO_GetInputValue(2, 2) == 0)
+    {
+		setenv( "bootcmd", "run ezb_bootargs ezb_bootm" );
+	} else {
+
+		setenv( "bootcmd", "run app_bootargs app_bootm");
 	}
 }
 
