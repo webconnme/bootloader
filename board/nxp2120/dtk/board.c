@@ -314,9 +314,11 @@ static void init_boot_mode(void)
     if (NX_GPIO_GetInputValue(2, 2) == 0)
     {
 		setenv( "bootcmd", "run ezb_bootargs ezb_bootm" );
+    	DBGOUT("%s : env mode ...\n", CFG_SYS_BOARD_NAME);
 	} else {
 
 		setenv( "bootcmd", "run app_bootargs app_bootm");
+    	DBGOUT("%s : app mode ...\n", CFG_SYS_BOARD_NAME);
 	}
 }
 
