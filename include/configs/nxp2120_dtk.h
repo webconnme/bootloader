@@ -124,14 +124,25 @@
 /*-----------------------------------------------------------------------
  * Ethernet drivers (DM9000 / W5300)
  */
-#if (1)
+#define	CONFIG_AX88796B
+
+#ifdef CONFIG_DM9000
 /* DM9000 */
 #define CONFIG_DRIVER_DM9000			1
 #define CONFIG_DM9000_BASE	   			CFG_EXT_PHY_BASEADDR_ETHER	/* DM9000: 0x10000000(CS4) */
 #define DM9000_IO	   					CONFIG_DM9000_BASE
 #define DM9000_DATA	   					(CONFIG_DM9000_BASE + 0x4)
 //#define CONFIG_DM9000_DEBUG
-#else
+#endif
+
+#ifdef CONFIG_AX88796B
+/* AX88796B */
+#define CONFIG_DRIVER_AX88796B			1
+#define AX88796B_BASE	   				CFG_EXT_PHY_BASEADDR_ETHER	/* AX88796B: 0x10000000(CS4) */
+//#define CONFIG_AX88796B_DEBUG
+#endif
+
+#ifdef CONFIG_W5300
 /* W5300 */
 #define CONFIG_DRIVER_W5300				1
 #define CONFIG_DRIVER_DEBUG				0							/* or 0 */

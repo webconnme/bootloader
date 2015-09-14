@@ -33,9 +33,14 @@ int board_eth_init(bd_t *bis)
 #ifdef	CONFIG_DRIVER_DM9000
 	dm9000_initialize(bis);
 	return eth_init(bis);
-#else	// CONFIG_DRIVER_DM9000
-	return -1;
 #endif
+
+#ifdef	CONFIG_DRIVER_AX88796B
+	ax88796b_initialize(bis);
+	return eth_init(bis);
+#endif
+
+	return -1;
 }
 #endif	/* CONFIG_CMD_NET */
 

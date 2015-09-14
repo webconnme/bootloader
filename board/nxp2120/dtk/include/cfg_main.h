@@ -72,7 +72,7 @@
 /*------------------------------------------------------------------------------
  * 	Extern Ethernet
  */
-#define CFG_EXT_PHY_BASEADDR_ETHER          	0x04000000	// DM9000: CS1
+#define CFG_EXT_PHY_BASEADDR_ETHER          	0x04000000	// DM9000 or AX88796b : CS1
 #define	CFG_EXT_IRQ_NUM_ETHER					(IRQ_GPIO_C_START + 12)
 
 /*------------------------------------------------------------------------------
