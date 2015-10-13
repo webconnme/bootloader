@@ -38,7 +38,11 @@
 #define DBGOUT(msg...)
 #endif
 
+#if 1
+#define ERROUT(msg...)		{ printf("SDHC:  "); printf(msg); }
+#else
 #define ERROUT(msg...)		{ printf("sdhc: line=%d ", __LINE__); printf(msg); }
+#endif
 
 #define	DEBUG_RESP			(1)
 #define	DEBUG_DATA			(1)
@@ -463,7 +467,7 @@ static int send_cmd(int index, unsigned int cmd, unsigned int argc,
 
 	/* Check card status. */
 	if (NX_SDCARD_STATUS_NOCARD == check_disk(index)) {
-		ERROUT("Error, mmc%d no disk !!!\n", index);
+		ERROUT("mmc%d no disk !!!\n", index);
 		return NX_SDCARD_STATUS_NOCARD;
 	}
 

@@ -444,8 +444,8 @@ extern void davinci_eth_set_mac_addr (const u_int8_t *addr);
 	// psw0523 fix for mmc env
 #ifndef CONFIG_ENV_IS_IN_MMC
 #ifdef CONFIG_GENERIC_MMC
-	puts ("MMC:   ");
-	mmc_initialize (gd->bd);
+//	puts ("MMC:   ");
+//	mmc_initialize (gd->bd);
 #endif
 #endif
 

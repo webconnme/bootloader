@@ -247,7 +247,7 @@ int eth_initialize(bd_t *bis)
 			if (eth_number)
 				puts (", ");
 
-			printf("%s", dev->name);
+//			printf("%s", dev->name);
 
 			if (ethprime && strcmp (dev->name, ethprime) == 0) {
 				eth_current = dev;

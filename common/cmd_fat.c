@@ -62,7 +62,7 @@ int do_fat_fsload (cmd_tbl_t *cmdtp, int flag, int argc, char *argv[])
 		part = (int)simple_strtoul(++ep, NULL, 16);
 	}
 	if (fat_register_device(dev_desc,part)!=0) {
-		printf ("\n** Unable to use %s %d:%d for fatload **\n",argv[1],dev,part);
+//		printf ("\n** Unable to use %s %d:%d for fatload **\n",argv[1],dev,part);
 		return 1;
 	}
 	offset = simple_strtoul (argv[3], NULL, 16);
@@ -121,7 +121,7 @@ int do_fat_ls (cmd_tbl_t *cmdtp, int flag, int argc, char *argv[])
 		part = (int)simple_strtoul(++ep, NULL, 16);
 	}
 	if (fat_register_device(dev_desc,part)!=0) {
-		printf ("\n** Unable to use %s %d:%d for fatls **\n",argv[1],dev,part);
+//		printf ("\n** Unable to use %s %d:%d for fatls **\n",argv[1],dev,part);
 		return 1;
 	}
 	if (argc == 4)
@@ -166,7 +166,7 @@ int do_fat_fsinfo (cmd_tbl_t *cmdtp, int flag, int argc, char *argv[])
 		part = (int)simple_strtoul(++ep, NULL, 16);
 	}
 	if (fat_register_device(dev_desc,part)!=0) {
-		printf ("\n** Unable to use %s %d:%d for fatinfo **\n",argv[1],dev,part);
+//		printf ("\n** Unable to use %s %d:%d for fatinfo **\n",argv[1],dev,part);
 		return 1;
 	}
 	return (file_fat_detectfs ());

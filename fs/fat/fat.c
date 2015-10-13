@@ -79,8 +79,8 @@ int fat_register_device (block_dev_desc_t * dev_desc, int part_no)
 	cur_dev = dev_desc;
 	/* check if we have a MBR (on floppies we have only a PBR) */
 	if (dev_desc->block_read(dev_desc->dev, 0, 1, (ulong *)buffer) != 1) {
-		printf("** Can't read from device %d **\n",
-			dev_desc->dev);
+//		printf("** Can't read from device %d **\n",
+//			dev_desc->dev);
 		return -1;
 	}
 	if (buffer[DOS_PART_MAGIC_OFFSET] != 0x55 ||

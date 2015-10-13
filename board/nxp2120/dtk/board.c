@@ -50,19 +50,19 @@ static int check_boot(void)
 
 	ret = run_command("mmc part 0", 0); 
 	if (ret < 0) {
-		printf("%s: mmc part 0 error\n", __func__);
+//		printf("%s: mmc part 0 error\n", __func__);
 		goto ERR_OUT;
 	}   
 
 	ret = run_command("fatls mmc 0 boot/uImage", 0); 
 	if (ret < 0) {
-		printf("%s: fatls boot/uImage error\n", __func__);
+//		printf("%s: fatls boot/uImage error\n", __func__);
 		goto ERR_OUT;
 	}   
 
 	ret = run_command("fatls mmc 0 boot/rootfs.img.gz", 0); 
 	if (ret < 0) {
-		printf("%s: fatls boot/rootfs.img.gz error\n", __func__);
+//		printf("%s: fatls boot/rootfs.img.gz error\n", __func__);
 		goto ERR_OUT;
 	}   
 
@@ -120,7 +120,7 @@ int board_init(void)
 	init_alive_pad();
 	init_bus_pad();
 
-	DBGOUT("%s : done board initialize ...\n", CFG_SYS_BOARD_NAME);
+//	DBGOUT("%s : done board initialize ...\n", CFG_SYS_BOARD_NAME);
 
 	return 0;
 }
@@ -311,14 +311,13 @@ static void init_bus_pad(void)
 
 static void init_boot_mode(void)
 {
-    if (NX_GPIO_GetInputValue(2, 2) == 0)
-    {
+	if (NX_GPIO_GetInputValue(2, 2) == 0)
+  {
 		setenv( "bootcmd", "run ezb_bootargs ezb_bootm" );
-    	DBGOUT("%s : env mode ...\n", CFG_SYS_BOARD_NAME);
+		DBGOUT("\n%s : env mode ...\n\n", CFG_SYS_BOARD_NAME);
 	} else {
-
 		setenv( "bootcmd", "run app_bootargs app_bootm");
-    	DBGOUT("%s : app mode ...\n", CFG_SYS_BOARD_NAME);
+		DBGOUT("\n%s : app mode ...\n\n", CFG_SYS_BOARD_NAME);
 	}
 }
 

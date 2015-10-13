@@ -84,8 +84,8 @@ mmc_write_blocks(struct mmc *mmc, ulong start, lbaint_t blkcnt, const void*src)
 	struct mmc_data data;
 
 	if ((start + blkcnt) > mmc->block_dev.lba) {
-		printf("MMC: block number 0x%lx exceeds max(0x%lx)\n",
-			start + blkcnt, mmc->block_dev.lba);
+//		printf("MMC: block number 0x%lx exceeds max(0x%lx)\n",
+//			start + blkcnt, mmc->block_dev.lba);
 		return 0;
 	}
 
@@ -206,8 +206,8 @@ static ulong mmc_bread(int dev_num, ulong start, lbaint_t blkcnt, void *dst)
 		return 0;
 
 	if ((start + blkcnt) > mmc->block_dev.lba) {
-		printf("MMC: block number 0x%lx exceeds max(0x%lx)\n",
-			start + blkcnt, mmc->block_dev.lba);
+//		printf("MMC: block number 0x%lx exceeds max(0x%lx)\n",
+//			start + blkcnt, mmc->block_dev.lba);
 		return 0;
 	}
 

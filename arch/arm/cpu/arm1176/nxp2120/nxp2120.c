@@ -25,7 +25,13 @@
 /* nexell soc headers */
 #include <platform.h>
 
+#define DEBUG	0
+
+#if DEBUG
 #define DBGOUT(msg...)		{ printf("cpu: " msg); }
+#else
+#define DBGOUT(msg...)
+#endif
 
 /*------------------------------------------------------------------------------
  * cpu init
@@ -450,6 +456,7 @@ void mem_cfg_info(void)
 	int	CPUSTR  = (phyctrl >>  4) & 0x7;
 	int	RAMSTR  = (config  >> 10) & 0x1;
 
+#if DEBUG
 	DBGOUT("Memory Clock Configuration :\n");
 	DBGOUT("[MEMCFG = 0x%08X, MEMTIME_0 = 0x%08X, MEMTIME_1 = 0x%08X]\n", config, time_0, time_1);
 	DBGOUT("DLYL =%4d, ADDL  =%4d, RDL  =%4d (CAS) [cycle]  \n", (DLYLAT+1), ADDLAT, RDLAT);
@@ -485,6 +492,7 @@ void mem_cfg_info(void)
 
 	DBGOUT("MCURATE  : MCLK = %s\n", !(memctrl&(1<<1))?"BCLK":"2xBCLK");
 	DBGOUT("MCUPPADD : MCLK %s\n", !(memctrl&(1<<0))?"< 200 Mhz":"> 200 Mhz");
+#endif
 }
 
 /*------------------------------------------------------------------------------
@@ -513,7 +521,7 @@ void cpu_cfg_info(void)
 	NX_CLKPWR_REGSET *pReg = (NX_CLKPWR_REGSET *)(NX_CLKPWR_BASEADDR + (MMU_ON == TRUE ? NONCACHE_IO_OFFSET: 0));
 	resetstat = *(volatile unsigned long *)NX_CLKPWR_RESETSTATUS;
 
-	DBGOUT("%s: Reset status 0x%x, ", CFG_SYS_CPU_NAME, resetstat);
+	printf("%s: Reset status 0x%x, ", CFG_SYS_CPU_NAME, resetstat);
 	switch (resetstat) {
 		case (1<<0): printf("[Power On Reset]\n");	break;
 		case (1<<1): printf("[GPIO]\n");			break;

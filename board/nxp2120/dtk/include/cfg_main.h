@@ -24,7 +24,7 @@
  * 	System Name
  */
 #define	CFG_SYS_CPU_NAME						"nxp2120"
-#define	CFG_SYS_BOARD_NAME						"nxp2120-dtk"
+#define	CFG_SYS_BOARD_NAME					"nxp2120-webconn"
 
 /*------------------------------------------------------------------------------
  * 	System PLL / BUS config

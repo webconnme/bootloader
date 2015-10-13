@@ -25,6 +25,8 @@
 #include <command.h>
 #include <mmc.h>
 
+#define DEBUG 0
+
 #ifndef CONFIG_GENERIC_MMC
 static int curr_device = -1;
 
@@ -167,7 +169,9 @@ int do_mmcops(cmd_tbl_t *cmdtp, int flag, int argc, char * argv[])
 			mmc_dev = mmc_get_dev(dev);
 			if (mmc_dev != NULL &&
 			    mmc_dev->type != DEV_TYPE_UNKNOWN) {
+#if DEBUG
 				print_part(mmc_dev);
+#endif
 				return 0;
 			}
 

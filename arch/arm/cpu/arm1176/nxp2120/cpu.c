@@ -76,17 +76,17 @@ int print_cpuinfo(void)
 	asm("mov %0, sp":"=r" (reg_sp));
 	asm("mov %0, pc":"=r" (reg_pc));
 
-	printf("U-Boot Text=0x%08x, End=0x%08x \n", (uint)_armboot_start, (uint)_bss_end);
+//	printf("U-Boot Text=0x%08x, End=0x%08x \n", (uint)_armboot_start, (uint)_bss_end);
 #if defined(CONFIG_SYS_HEAP_LEN)
 	#if defined(CONFIG_SYS_HEAP_BASE)
-	printf("U-Boot Heap=0x%08x, End=0x%08x \n",
-		CONFIG_SYS_HEAP_BASE, CONFIG_SYS_HEAP_BASE+CONFIG_SYS_HEAP_LEN);
+//	printf("U-Boot Heap=0x%08x, End=0x%08x \n",
+//		CONFIG_SYS_HEAP_BASE, CONFIG_SYS_HEAP_BASE+CONFIG_SYS_HEAP_LEN);
 	#else
-	printf("U-Boot Heap=0x%08x, End=0x%08x \n",
-		(uint)_bss_end,	(uint)_bss_end+CONFIG_SYS_HEAP_LEN);
+//	printf("U-Boot Heap=0x%08x, End=0x%08x \n",
+//		(uint)_bss_end,	(uint)_bss_end+CONFIG_SYS_HEAP_LEN);
 	#endif
 #endif
-	printf("U-Boot PC  =0x%08x, SP =0x%08x \n", reg_pc, reg_sp);
+//	printf("U-Boot PC  =0x%08x, SP =0x%08x \n", reg_pc, reg_sp);
 
 	cpu_stat_info();
 
