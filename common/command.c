@@ -78,6 +78,7 @@ int _do_help (cmd_tbl_t *cmd_start, int cmd_items, cmd_tbl_t * cmdtp, int
 			printf("%-*s- %s\n", CONFIG_SYS_HELP_CMD_WIDTH,
 			       cmd_array[i]->name, usage);
 		}
+		printf("#################\n");
 		return 0;
 	}
 	/*

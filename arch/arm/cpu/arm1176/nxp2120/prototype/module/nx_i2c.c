@@ -39,7 +39,7 @@ CBOOL   NX_I2C_Initialize( void )
 {
 	static CBOOL bInit = CFALSE;
 	U32 i;
-
+printf("LINE[%04d]: func(%s), #########################\n",__LINE__,__func__);
 	if( CFALSE == bInit )
 	{
 		for( i=0; i < NUMBER_I2C_MODULE; i++ )

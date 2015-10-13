@@ -239,9 +239,9 @@ int i2c_set_bus_num (unsigned int bus)
 	}
 	DBGOUT("[%d]: set to bus=%d\n", );
 
-	if (NULL == i2c_cur)
+	if (NULL == i2c_cur) 
 		i2c_init(CONFIG_SYS_I2C_SPEED, CONFIG_SYS_I2C_SLAVE);
-
+	
 	i2c_cur = &i2c_par[bus];
 	i2c_bus = bus;
 	return 0;
@@ -256,7 +256,7 @@ unsigned int i2c_get_bus_num(void)
 
 int i2c_set_bus_speed(unsigned int speed)
 {
-	if (NULL == i2c_cur)
+	if (NULL == i2c_cur) 
 		i2c_init(CONFIG_SYS_I2C_SPEED, CONFIG_SYS_I2C_SLAVE);
 
 	i2c_cur = &i2c_par[i2c_bus];
@@ -312,7 +312,7 @@ int i2c_write(u8 chip, u32 addr, int alen, u8 *buffer, int len)
 	/*
 	 * transfer : slave addresss
 	 */
-	data = chip;
+	data = chip<<1;
 	pio_start(i2c);
 	ret = pio_putbyte(i2c, data);
 	if (ret) {
@@ -367,8 +367,13 @@ int i2c_read (u8 chip, uint addr, int alen, u8 *buffer, int len)
 	chip |= 0x01;
 
 #if (DBG_I2C)
-	printf("i2c[%d]: R chip=0x%2x, addr=0x%x, alen=%d, rlen=%d\n", bus, chip, addr, alen, len);
+	printf("i2c[%d]: R chip=0x%2x, addr=0x%x, alen=%d, rlen=%d\n", i2c_bus, chip, addr, alen, len);
 #endif
+
+	if (NULL == i2c) {
+		i2c_init(CONFIG_SYS_I2C_SPEED, CONFIG_SYS_I2C_SLAVE);
+		i2c = i2c_cur = &i2c_par[i2c_bus];
+	}
 
 	/*
 	 * transfer : register addr
@@ -379,7 +384,8 @@ int i2c_read (u8 chip, uint addr, int alen, u8 *buffer, int len)
 	/*
 	 * transfer : slave addresss
 	 */
-	data = chip;
+	data = chip<<1;
+	data |= 0x1;
 	pio_start(i2c);
 	ret = pio_putbyte(i2c, data);
 	if (ret) {
@@ -436,8 +442,8 @@ int i2c_probe(u8 chip)
 	int ret  = -1;
 
 	/* test with tx */
-	if (chip & 0x1)
-		return 01;
+//	if (chip & 0x1)
+//		return 01;
 
 	if (NULL == i2c_cur){
 		i2c_init(CONFIG_SYS_I2C_SPEED, CONFIG_SYS_I2C_SLAVE);
@@ -446,12 +452,13 @@ int i2c_probe(u8 chip)
 
 	chip &= 0xFE;
 
-	DBGOUT("[%d]: chip=0x%2x\n", bus, chip);
+	//DBGOUT("[%d]: chip=0x%2x\n", bus, chip);
+	//printf("chip=0x%2x\n", chip);
 
 	/*
 	 * transfer : slave addresss
 	 */
-	data = chip;
+	data = chip<<1;
 
 	pio_start(i2c);
 

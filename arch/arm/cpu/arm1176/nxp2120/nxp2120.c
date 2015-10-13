@@ -123,6 +123,7 @@ static void proto_init(void)
 	NX_PWM_SetBaseAddress((U32)IO_ADDRESS(NX_PWM_GetPhysicalAddress()));
  	NX_PWM_OpenModule();
 
+
 	/*
 	 * NOTE> ALIVE Power Gate must enable for RTC register access.
 	 */

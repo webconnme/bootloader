@@ -26,6 +26,9 @@
 #include <net.h>
 #include <miiphy.h>
 
+#define CHIP_ID				0x50
+#define ARRAY_ADDRESS 0xfa
+
 void eth_parse_enetaddr(const char *addr, uchar *enetaddr)
 {
 	char *end;
@@ -51,6 +54,23 @@ int eth_setenv_enetaddr(char *name, const uchar *enetaddr)
 	sprintf(buf, "%pM", enetaddr);
 
 	return setenv(name, buf);
+}
+
+int ax88796b_get_eeprom_mac(uchar *enetaddr)
+{
+	int i;
+	unsigned char linebuf[6];
+
+	if(	i2c_read(CHIP_ID, ARRAY_ADDRESS, 1, linebuf, 6) != 0 ) {
+		puts ("Error reading the chip.\n");
+		return 1;
+	}
+	else {
+		for (i=0; i<6; i++) {
+			enetaddr[i] = linebuf[i];
+		}
+		return 0;
+	}
 }
 
 int eth_getenv_enetaddr_by_index(int index, uchar *enetaddr)
@@ -234,7 +254,8 @@ int eth_initialize(bd_t *bis)
 				puts (" [PRIME]");
 			}
 
-			eth_getenv_enetaddr_by_index(eth_number, env_enetaddr);
+			ax88796b_get_eeprom_mac(env_enetaddr);
+			eth_setenv_enetaddr("ethaddr", env_enetaddr);
 
 			if (memcmp(env_enetaddr, "\0\0\0\0\0\0", 6)) {
 				if (memcmp(dev->enetaddr, "\0\0\0\0\0\0", 6) &&
@@ -338,9 +359,10 @@ int eth_init(bd_t *bis)
 	do {
 		uchar env_enetaddr[6];
 
-		if (eth_getenv_enetaddr_by_index(eth_number, env_enetaddr))
+		if(ax88796b_get_eeprom_mac(env_enetaddr) == 0) {
 			memcpy(dev->enetaddr, env_enetaddr, 6);
-
+			eth_setenv_enetaddr("ethaddr", env_enetaddr);
+		}
 		++eth_number;
 		dev = dev->next;
 	} while (dev != eth_devices);
