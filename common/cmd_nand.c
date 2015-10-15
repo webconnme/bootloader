@@ -148,8 +148,13 @@ out:
 	if (*size == nand->size)
 		puts("whole chip\n");
 	else
+#if 1
+		printf("offset 0x%08x, size 0x%08x\n",
+			(uint)(*off&-1), (uint)(*size&-1));
+#else // original
 		printf("offset 0x%08x%08x, size 0x%08x%08x\n",
 			(uint)(*off>>32), (uint)(*off&-1), (uint)(*size>>32), (uint)(*size&-1));
+#endif
 	return 0;
 }
 

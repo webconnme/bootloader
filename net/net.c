@@ -111,6 +111,7 @@ DECLARE_GLOBAL_DATA_PTR;
 # define ARP_TIMEOUT_COUNT	CONFIG_NET_RETRY_COUNT
 #endif
 
+int nxp_tftpdn_size = 0;
 /** BOOTP EXTENTIONS **/
 
 IPaddr_t	NetOurSubnetMask=0;		/* Our subnet mask (0=unknown)	*/
@@ -344,10 +345,11 @@ NetLoop(proto_t protocol)
 #ifdef CONFIG_NET_MULTI
 	eth_set_current();
 #endif
-	if (eth_init(bd) < 0) {
-		eth_halt();
-		return(-1);
-	}
+	// re init (larche)
+//	if (eth_init(bd) < 0) {
+//		eth_halt();
+//		return(-1);
+//	}
 
 restart:
 #ifdef CONFIG_NET_MULTI
@@ -528,6 +530,7 @@ restart:
 					NetBootFileXferSize,
 					NetBootFileXferSize);
 				sprintf(buf, "%lX", NetBootFileXferSize);
+				nxp_tftpdn_size = NetBootFileXferSize; // add falinux
 				setenv("filesize", buf);
 
 				sprintf(buf, "%lX", (unsigned long)load_addr);

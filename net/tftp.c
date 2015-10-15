@@ -574,7 +574,7 @@ TftpStart (void)
 	}
 
 #if defined(CONFIG_NET_MULTI)
-	printf ("Using %s device\n", eth_get_name());
+//	printf ("Using %s device\n", eth_get_name());
 #endif
 	printf("TFTP from server %pI4"
 		"; our IP address is %pI4", &TftpServerIP, &NetOurIP);

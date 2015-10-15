@@ -32,6 +32,10 @@ DECLARE_GLOBAL_DATA_PTR;
 
 #include "eth.c"
 
+#if CONFIG_SYS_CBSIZE < 1024
+#error "--------- need CONFIG_SYS_CBSIZE more then 1024"
+#endif
+
 /* debug print for hw status */
 #ifdef DEBUG_REG
 static void dbg_reg_dpc(int dev);
@@ -311,13 +315,57 @@ static void init_bus_pad(void)
 
 static void init_boot_mode(void)
 {
+
+	char str_cmd[CONFIG_SYS_CBSIZE];
+	char *imgSize;
+
 	if (NX_GPIO_GetInputValue(2, 2) == 0)
   {
 		setenv( "bootcmd", "run ezb_bootargs ezb_bootm" );
 		DBGOUT("\n%s : env mode ...\n\n", CFG_SYS_BOARD_NAME);
+//		NX_GPIO_SetOutputValue( PAD_GET_GRP(PAD_GPIO_B+31),	PAD_GET_BIT(PAD_GPIO_B+31), CFALSE);
+//		NX_GPIO_SetOutputValue( PAD_GET_GRP(PAD_GPIO_C+0),	PAD_GET_BIT(PAD_GPIO_C+0),  CFALSE);
+//		NX_GPIO_SetOutputValue( PAD_GET_GRP(PAD_GPIO_C+1),	PAD_GET_BIT(PAD_GPIO_C+1),	CFALSE);
 	} else {
-		setenv( "bootcmd", "run app_bootargs app_bootm");
-		DBGOUT("\n%s : app mode ...\n\n", CFG_SYS_BOARD_NAME);
+
+		DBGOUT("\n%s : recovery mode ...\n\n", CFG_SYS_BOARD_NAME);
+
+#if 1
+		// recovery Kernel
+		imgSize = getenv("ezb_rec_size_k");
+		sprintf( str_cmd, "nand read 0x81000000 0x4800000 %s", imgSize );
+		run_command( str_cmd, 0 );
+		sprintf( str_cmd, "nand erase 0x200000 %s", imgSize );
+		run_command( str_cmd, 0 );
+		sprintf( str_cmd, "nand write 0x81000000 0x200000 %s", imgSize );
+		run_command( str_cmd, 0 );
+
+		// recovery Ramdisk
+		imgSize = getenv("ezb_rec_size_r");
+		sprintf( str_cmd, "nand read 0x81000000 0x5000000 %s", imgSize );
+		run_command( str_cmd, 0 );
+		sprintf( str_cmd, "nand erase 0xa00000 %s", imgSize );
+		run_command( str_cmd, 0 );
+		sprintf( str_cmd, "nand write 0x81000000 0xa00000 %s", imgSize );
+		run_command( str_cmd, 0 );
+	
+		// recovery App
+		imgSize = getenv("ezb_rec_size_a");
+		sprintf( str_cmd, "nand read 0x81000000 0x6000000 %s", imgSize );
+		run_command( str_cmd, 0 );
+		sprintf( str_cmd, "nand erase 0x1a00000 %s", imgSize );
+		run_command( str_cmd, 0 );
+		sprintf( str_cmd, "nand write 0x81000000 0x1a00000 %s", imgSize );
+		run_command( str_cmd, 0 );
+#else // dump 0x0480_0000 ~ 0x0800_0000
+		sprintf( str_cmd, "nand read 0x81000000 0x4800000 0x3800000" );
+		run_command( "nand read 0x81000000 0x4800000 0x3800000", 0 );
+		run_command( "nand erase 0x200000 0x3800000", 0 );
+		run_command( "nand read 0x81000000 0x200000 0x3800000", 0 );
+#endif
+
+//		setenv( "bootcmd", "run app_bootargs app_bootm");
+//		DBGOUT("\n%s : app mode ...\n\n", CFG_SYS_BOARD_NAME);
 	}
 }
 

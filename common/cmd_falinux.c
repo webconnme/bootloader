@@ -21,6 +21,7 @@
 DECLARE_GLOBAL_DATA_PTR;
 extern char console_buffer[];
 extern int nxp_usbdn_size;  // arch/arm/cpu/arm1176/nxp2120/common/cmd_udown.c
+extern int nxp_tftpdn_size;  // net/net.c
 
 #define EZB_VER_STR     "0.1.2"
 
@@ -29,12 +30,15 @@ extern int nxp_usbdn_size;  // arch/arm/cpu/arm1176/nxp2120/common/cmd_udown.c
 #endif
 
 enum {
-	NAND_ADDR_BOOT = 0x000000,
-	NAND_ADDR_ENV = 0x0e0000,
-	NAND_ADDR_DT = 0x0C0000,
-	NAND_ADDR_KERNEL = 0x400000,
-	NAND_ADDR_RAMDISK = 0xc00000,
-	NAND_ADDR_APP_KERNEL = 0xf800000, // add:lbb
+	NAND_ADDR_BOOT							= 0x000000,
+	NAND_ADDR_ENV								= 0x0e0000,
+	NAND_ADDR_DT								= 0x0C0000,
+	NAND_ADDR_KERNEL						= 0x200000,
+	NAND_ADDR_RAMDISK						= 0xA00000,
+	NAND_ADDR_RECOVERY_KERNEL		= 0x4800000,
+	NAND_ADDR_RECOVERY_RAMDISK	= 0x5000000,
+	NAND_ADDR_RECOVERY_APP			= 0x6000000,
+	NAND_ADDR_APP_KERNEL				= 0xf800000, // add:lbb
 };
 
 #define DRAM_DOWNLOAD_BASE  0x81000000  //
@@ -51,6 +55,9 @@ enum {
 #define KEY_APP_BOOTARGS    "app_bootargs" // add:lbb
 #define KEY_APP_KCMD2   "app_KCMD2"    // add:lbb
 #define KEY_APP_BOOTM   "app_bootm"  // add:lbb
+#define KEY_REC_SIZE_K      "ezb_rec_size_k"	// add larche
+#define KEY_REC_SIZE_R      "ezb_rec_size_r"	// add larche
+#define KEY_REC_SIZE_A      "ezb_rec_size_a"	// add larche
 
 enum {
 	F_IDX_ETHADDR = 0,
@@ -70,7 +77,8 @@ enum {
 	F_IDX_KCMD4,
 	F_IDX_KCMD5,
 	F_IDX_BOOT_MODE, // add:lbb
-	F_IDX_COUNT
+	F_IDX_RECOVERY_APP, // add larche
+	F_IDX_COUNT,
 };
 
 static char ezb_key[F_IDX_COUNT][32] = { "ethaddr", "ipaddr", "netmask",
@@ -78,6 +86,7 @@ static char ezb_key[F_IDX_COUNT][32] = { "ethaddr", "ipaddr", "netmask",
 "gatewayip", "serverip", "ezb_uImage", "ezb_ramdisk", "ezb_uboot", "ezb_dt",
 		"ezb_autoexec", "bootdelay", "ezb_KCMD1", "ezb_KCMD2", "ezb_KCMD3",
 		"ezb_KCMD4", "ezb_KCMD5", "boot_mode", // add:lbb
+		"ezb_recovery_app", "", 
 		};
 
 static char ezb_def_str[F_IDX_COUNT + 1][80] = { "00:fa:15:21:20:07",
@@ -86,7 +95,9 @@ static char ezb_def_str[F_IDX_COUNT + 1][80] = { "00:fa:15:21:20:07",
 		"2", "console=ttyS0,115200",
 		"root=/dev/ram0 rw initrd=0x82000000,12M ramdisk=24576",
 		"earlyprintk", " ", " ", "env", // add lbb
-		"noinitrd root=/dev/mtdblock1 rw rootfstype=yaffs2" };
+		"webconn.img", // add larche
+		"noinitrd root=/dev/mtdblock1 rw rootfstype=yaffs2",
+		};
 
 #define EZB_DEF_STR_RFS_RAMDISK_IDX     12
 #define EZB_DEF_STR_RFS_NAND_IDX        F_IDX_COUNT
@@ -283,6 +294,17 @@ static int download_by_usb(char *fname) {
 	return nxp_usbdn_size;
 }
 
+static int download_by_tftp(char *fname) {
+	char str_cmd[CONFIG_SYS_CBSIZE];
+
+	sprintf(str_cmd, "tftp 0x%x %s", 
+	DRAM_DOWNLOAD_BASE,fname);
+	printf("\n>>%s\n", str_cmd);
+	run_command(str_cmd, 0);
+
+	return nxp_tftpdn_size;
+}
+
 //------------------------------------------------------------------------------
 /** @brief
  nand write addr size
@@ -291,12 +313,12 @@ static void write_to_nand(int addr, int size) {
 	char str_cmd[CONFIG_SYS_CBSIZE];
 
 	sprintf(str_cmd, "nand erase 0x%x 0x%x", addr, size);
-	printf("  >>%s\n", str_cmd);
+	printf("\n>>%s", str_cmd);
 	run_command(str_cmd, 0);
 
 	sprintf(str_cmd, "nand write 0x%x 0x%x 0x%x",
 	DRAM_DOWNLOAD_BASE, addr, size);
-	printf("  >>%s\n", str_cmd);
+	printf("\n>>%s", str_cmd);
 	run_command(str_cmd, 0);
 }
 
@@ -407,6 +429,67 @@ static int do_ezb_cmd(cmd_tbl_t *cmdtp, int flag, int argc, char * const argv[])
 		ssize = ALIGN_NAND_ERASE_ADDR(fsize);
 
 		write_to_nand(NAND_ADDR_BOOT, ssize);
+	} else if (0 == strcmp("tfb", argv[0])) {
+		fsize = download_by_tftp(get_ezb_strv(F_IDX_UBOOT));
+		ssize = ALIGN_NAND_ERASE_ADDR(fsize);
+
+		write_to_nand(NAND_ADDR_BOOT, ssize);
+	} else if (0 == strcmp("tfr", argv[0])) {
+		// download and write
+		fsize = download_by_tftp(get_ezb_strv(F_IDX_RAMDISK));
+		ssize = ALIGN_NAND_ERASE_ADDR(fsize);
+		write_to_nand(NAND_ADDR_RAMDISK, ssize);
+
+		// env, load ramdisk
+		sprintf(str_env, "nand read 0x%x 0x%x 0x%x", DRAM_RAMDISK_ADDR,
+				NAND_ADDR_RAMDISK, ssize);
+		setenv( KEY_LOAD_R, str_env);
+
+		// save env
+		saveenv_after_download();
+	}	else if (0 == strcmp("tfk", argv[0])) {
+		// download and write
+		fsize = download_by_tftp(get_ezb_strv(F_IDX_KERNEL));
+		ssize = ALIGN_NAND_ERASE_ADDR(fsize);
+		write_to_nand(NAND_ADDR_KERNEL, ssize);
+
+		// env, load kernel
+		sprintf(str_env, "nand read 0x%x 0x%x 0x%x", DRAM_KERNEL_BOOTM,
+				NAND_ADDR_KERNEL, ssize);
+		setenv( KEY_LOAD_K, str_env);
+
+		// save env
+		saveenv_after_download();
+	} else if (0 == strcmp("rtfr", argv[0])) {
+		// download and write
+		fsize = download_by_tftp(get_ezb_strv(F_IDX_RAMDISK));
+		ssize = ALIGN_NAND_ERASE_ADDR(fsize);
+		write_to_nand(NAND_ADDR_RECOVERY_RAMDISK, ssize);
+
+		sprintf(str_env, "0x%x", ssize);
+		setenv( KEY_REC_SIZE_R, str_env);
+		saveenv_after_download();
+
+	}	else if (0 == strcmp("rtfk", argv[0])) {
+		// download and write
+		fsize = download_by_tftp(get_ezb_strv(F_IDX_KERNEL));
+		ssize = ALIGN_NAND_ERASE_ADDR(fsize);
+		write_to_nand(NAND_ADDR_RECOVERY_KERNEL, ssize);
+
+		sprintf(str_env, "0x%x", ssize);
+		setenv( KEY_REC_SIZE_K, str_env);
+		saveenv_after_download();
+
+	} else if (0 == strcmp("rtfa", argv[0])) {
+		// download and write
+		fsize = download_by_tftp(get_ezb_strv(F_IDX_RECOVERY_APP));
+		ssize = ALIGN_NAND_ERASE_ADDR(fsize);
+		write_to_nand(NAND_ADDR_RECOVERY_APP, ssize);
+
+		sprintf(str_env, "0x%x", ssize);
+		setenv( KEY_REC_SIZE_A, str_env);
+		saveenv_after_download();
+
 	}
 
 	return 0;
@@ -440,6 +523,42 @@ U_BOOT_CMD(
 		ufb, CONFIG_SYS_MAXARGS, 0, do_ezb_cmd,
 		"ufb for bootloader",
 		"download <uboot> by usb then write on flash"
+);
+
+U_BOOT_CMD(
+		tfb, CONFIG_SYS_MAXARGS, 0, do_ezb_cmd,
+		"tfb for bootloader",
+		"download <uboot> by tftp then write on flash"
+);
+
+U_BOOT_CMD(
+		tfr, CONFIG_SYS_MAXARGS, 0, do_ezb_cmd,
+		"tfr for ramdisk",
+		"download <ramdisk> by usb then write on flash"
+);
+
+U_BOOT_CMD(
+		tfk, CONFIG_SYS_MAXARGS, 0, do_ezb_cmd,
+		"tfk for kernel",
+		"download <uimage> by usb then write on flash"
+);
+
+U_BOOT_CMD(
+		rtfr, CONFIG_SYS_MAXARGS, 0, do_ezb_cmd,
+		"rtfr for recovery ramdisk",
+		"download <ramdisk> by usb then write on flash"
+);
+
+U_BOOT_CMD(
+		rtfk, CONFIG_SYS_MAXARGS, 0, do_ezb_cmd,
+		"rtfk for recovery kernel",
+		"download <uimage> by usb then write on flash"
+);
+
+U_BOOT_CMD(
+		rtfa, CONFIG_SYS_MAXARGS, 0, do_ezb_cmd,
+		"rtfa for recovery app",
+		"download <appimage> by usb then write on flash"
 );
 
 U_BOOT_CMD(

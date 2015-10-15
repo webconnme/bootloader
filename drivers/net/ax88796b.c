@@ -425,26 +425,26 @@ void ax88796_PHY_init(void)
 	switch (media_mode) {
 	default:
 	case MEDIA_AUTO:
-		printf("       AX88796B: The media mode is autosense.\n");
+//		printf("AX88796B: The media mode is autosense.\n");
 		break;
 
 	case MEDIA_100FULL:
-		printf("       AX88796B: The media mode is forced to 100full.\n");
+//		printf("AX88796B: The media mode is forced to 100full.\n");
 		mdio_write(0x10,0x00,0x2300);
 		break;
 
 	case MEDIA_100HALF:
-		printf("       AX88796B: The media mode is forced to 100half.\n");
+//		printf("AX88796B: The media mode is forced to 100half.\n");
 		mdio_write(0x10,0x00,0x2200);
 		break;
 
 	case MEDIA_10FULL:
-		printf("       AX88796B: The media mode is forced to 10full.\n");
+//		printf("AX88796B: The media mode is forced to 10full.\n");
 		mdio_write(0x10,0x00,0x0300);
 		break;
 
 	case MEDIA_10HALF:
-		printf("       AX88796B: The media mode is forced to 10half.\n");
+//		printf("AX88796B: The media mode is forced to 10half.\n");
 		mdio_write(0x10,0x00,0x0200);
 		break;
 	}
@@ -499,7 +499,7 @@ static int ax88796b_init (struct eth_device *dev, bd_t * bd)
 	ax_writeb(NESM_RX_START_PG + 1, EN1_CURPAG);
 
 	// set MAC address
-	printf("AX88796B MAC  : [ ");
+	printf("\nAX88796B MAC  : [ ");
 	for (i=0; i<ETHER_ADDR_LEN; i++)
 	{   
 		ax_writeb( dev->enetaddr[i] , (i+1)<<1);
@@ -528,7 +528,7 @@ static int ax88796b_init (struct eth_device *dev, bd_t * bd)
 	ax_writeb(E8390_RXCONFIG, EN0_RXCR); /* rx on,  */
 
 	mdelay(2000);		
-	printf("       AX88796B_Init : OK!\r\n\n");
+	printf("AX88796B_Init : OK!\r\n\n");
 
 	return TRUE;
 }

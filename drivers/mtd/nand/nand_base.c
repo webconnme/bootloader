@@ -2078,8 +2078,13 @@ static int nand_do_write_ops(struct mtd_info *mtd, loff_t to,
 		}
 
 	}
+#if 1
+	printf ("\rWriting at 0x%08x (%d). ",
+		(uint)(to&-1), mtd->erasesize);
+#else // original
 	printf ("\rWriting at 0x%08x%08x (%d). ",
 		(uint)(to>>32), (uint)(to&-1), mtd->erasesize);
+#endif
 
 	ops->retlen = ops->len - writelen;
 	if (unlikely(oob))

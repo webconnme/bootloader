@@ -111,9 +111,15 @@ int nand_erase_opts(nand_info_t *meminfo, const nand_erase_options_t *opts)
 	}
 
 	if (erase_length < meminfo->erasesize) {
+#if 1
+		printf("Warning: Erase size 0x%08x smaller than one "	\
+		       "erase block 0x%08x\n",
+		        (uint)(erase_length&-1), meminfo->erasesize);
+#else
 		printf("Warning: Erase size 0x%08x%08x smaller than one "	\
 		       "erase block 0x%08x\n",
 		       (uint)(erase_length>>32), (uint)(erase_length&-1), meminfo->erasesize);
+#endif
 		printf("         Erasing 0x%08x instead\n", meminfo->erasesize);
 		erase_length = meminfo->erasesize;
 	}
@@ -185,10 +191,13 @@ int nand_erase_opts(nand_info_t *meminfo, const nand_erase_options_t *opts)
 			 */
 			if (percent != percent_complete) {
 				percent_complete = percent;
-
+#if 1
+				printf("\rErasing at 0x%08x -- %3d%% complete.",
+				       (uint)(erase.addr&-1), (uint)percent);
+#else // original
 				printf("\rErasing at 0x%08x%08x -- %3d%% complete.",
 				       (uint)(erase.addr>>32), (uint)(erase.addr&-1), (uint)percent);
-
+#endif
 				if (opts->jffs2 && result == 0)
 					printf(" Cleanmarker written at 0x%08x%08x.",
 					       (uint)(erase.addr>>32), (uint)(erase.addr&-1));
