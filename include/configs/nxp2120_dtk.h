@@ -90,6 +90,44 @@
 #include <config_cmd_default.h>
 
 /* refer to common/env_common.c	*/
+#if 1
+#define CONFIG_BOOTDELAY	   			2
+#define CONFIG_ZERO_BOOTDELAY_CHECK
+#define CONFIG_ETHADDR		   			00:FA:45:4a:59:24
+#define CONFIG_NETMASK		   			255.255.0.0
+#define CONFIG_IPADDR					192.168.1.214
+#define CONFIG_SERVERIP					192.168.1.33
+#define CONFIG_GATEWAYIP				192.168.1.254
+#define CONFIG_BOOTFILE					"uImage"  		/* File to load	*/
+
+#define CONFIG_EXTRA_ENV_SETTINGS \
+        "console=ttyS0\0" \
+		"ethact=ax88796b\0" \
+		"stdin=serial\0" \
+		"stdout=serial\0" \
+		"stderr=serial\0" \
+		"ezb_load_r=nand read 0x82000000 0xc00000 0x8a0000\0" \
+		"ezb_load_k=nand read 0x81000000 0x400000 0x2c0000\0" \
+		"ezb_load_k_a=nand read 0x81000000 0xf800000 0x2c0000\0" \
+		"bootargs=console=ttyS0,115200 root=/dev/ram0 rw initrd=0x82000000,12M ramdisk=24576 mac=12:2b:45:4a:59:24:56 earlyprintk\0" \
+		"ezb_bootargs=setenv bootargs ${ezb_KCMD1} ${ezb_KCMD2} mac=${ethaddr} ${ezb_KCMD3} ${ezb_KCMD4} ${ezb_KCMD5}\0" \
+		"app_bootargs=setenv bootargs ${ezb_KCMD1} ${app_KCMD2} mac=${ethaddr} ${ezb_KCMD3} ${ezb_KCMD4} ${ezb_KCMD5}\0" \
+		"ezb_KCMD1=console=ttyS0,115200\0" \
+		"ezb_KCMD2=root=/dev/ram0 rw initrd=0x82000000,12M ramdisk=24576\0" \
+		"ezb_KCMD3=earlyprintk\0" \
+		"ezb_KCMD4=\0" \
+		"ezb_KCMD5=\0" \
+		"app_KCMD2=root=/dev/mtdblock8 rw yaffs\0" \
+		"ezb_dt=none\0" \
+		"ezb_autoexec=/app/run.sh\0" \
+		"ezb_uboot=uboot.nxp2120\0" \
+		"ezb_uImage=uImage\0" \
+		"ezb_ramdisk=ramdisk.wc-24M.gz\0" \
+		"boot_mode=env\0" \
+		"ezb_bootm=nand read 0x81000000 0x400000 0x2c0000; nand read 0x82000000 0xc00000 0x8a0000; bootm 0x81000000\0" \
+		"app_bootm=nand read 0x81000000 0xf800000 0x2c0000; nand read 0x82000000 0xc00000 0x8a0000; bootm 0x81000000\0" \
+		"bootcmd=run ezb_bootargs ezb_bootm"
+#else
 #define CONFIG_BOOTDELAY	   			2
 #define CONFIG_ZERO_BOOTDELAY_CHECK
 #define CONFIG_ETHADDR		   			12:2b:45:4a:59:24:56
@@ -99,6 +137,7 @@
 #define CONFIG_GATEWAYIP				192.168.1.254
 #define CONFIG_BOOTFILE					"uImage"  		/* File to load	*/
 #define CONFIG_BOOTCOMMAND				"tftp 0x81000000 uImage; bootm 0x81000000"
+#endif
 
 /*-----------------------------------------------------------------------
  * Miscellaneous configurable options
@@ -288,7 +327,9 @@
 #define	MTDPARTS_DEFAULT
 #endif
 
+/*
 #define CONFIG_EXTRA_ENV_SETTINGS	MTDPARTS_DEFAULT
+*/
 
 /*-----------------------------------------------------------------------
  * SDMMC

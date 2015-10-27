@@ -607,6 +607,24 @@ U_BOOT_CMD(
 #endif
 
 
+static int do_env (cmd_tbl_t *cmdtp, int flag, int argc, char * const argv[])
+{
+//	if (argc != 2 || strcmp(argv[1], "-f") != 0)
+//		return -1;
+
+	printf ("env defalut Environment to...\n");
+	set_default_env();
+
+	return 0;
+
+}
+
+U_BOOT_CMD(
+	env, 3, 0,      do_env,
+	"environment handling commands",
+	""
+);
+
 /************************************************************************
  * Match a name / name=value pair
  *
